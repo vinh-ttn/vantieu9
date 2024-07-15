@@ -84,7 +84,7 @@ function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 	
 	self.nState = CallPlayerFunction(nOwnerIndex, GetFightState)
 	
-	if CallPlayerFunction(nOwnerIndex, IsDeath) == 0 and CallPlayerFunction(nOwnerIndex, IsHide) == 0 then
+	if IsPlayerDeath(nOwnerIndex, IsDeath) == 0 and IsPlayerHidden(nOwnerIndex, IsHide) == 0 then
 		NpcWalk(self.nNpcIndex, nX, nY)
 		if self.bOwnerHideOrDeath == 1 then
 			self.bOwnerHideOrDeath = nil
@@ -123,7 +123,7 @@ end
 
 function BiaoCheClass:TransferToPlayer(nPlayerIndex)
 	local nPlayerMapId, nPlayerX32, nPlayerY32 = CallPlayerFunction(nPlayerIndex, GetWorldPos)
-	NpcNewWorld(self.nNpcIndex, nPlayerMapId, nPlayerX32, nPlayerY32)
+	NpcNewWorld(self, nPlayerMapId, nPlayerX32, nPlayerY32)
 end
 
 function BiaoCheClass:NotifyOwner()

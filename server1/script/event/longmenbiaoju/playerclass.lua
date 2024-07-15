@@ -41,10 +41,10 @@ end
 function Player:OnEnterMap()
 	local task = LongMenBiaoJu:GetTaskClass()
 	local data = LongMenBiaoJu:GetDataClass()
-	if data:GetTransferFlag() ~= 0 then
+	--if data:GetTransferFlag() ~= 0 then
 		data:SetTransferFlag(0)
 		task:OnPlayerChangeMapByTrap()
-	end
+	--end
 end
 
 LongMenBiaoJu.PlayerClass = Player
