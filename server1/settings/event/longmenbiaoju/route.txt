@@ -1,0 +1,27 @@
+±àºÅ	Æðµã	ÖÕµã	ÐÇ¼¶
+1	L©m An nam	L©m An b¾c	1
+2	 Thµnh §«	Giang T©n Th«n	2
+3	 T­¬ng D­¬ng	§¹o H­¬ng th«n	2
+4	 D­¬ng Ch©u	§¹o H­¬ng th«n	2
+5	 §¹i Lý 	Th¹ch Cæ trÊn	2
+6	 Ph­îng T­êng	VÜnh L¹c trÊn	2
+7	 BiÖn Kinh	Chu Tiªn trÊn	2
+8	 D­¬ng Ch©u	 T­¬ng D­¬ng	3
+9	L©m An nam	Long TuyÒn th«n	3
+10	 BiÖn Kinh	 T­¬ng D­¬ng	4
+11	 BiÖn Kinh	§¹o H­¬ng th«n	4
+12	 BiÖn Kinh	 T­¬ng D­¬ng	5
+13	 BiÖn Kinh	§¹o H­¬ng th«n	5
+14	 Ph­îng T­êng	 Thµnh §«	5
+15	 T­¬ng D­¬ng	Chu Tiªn trÊn	5
+16	 T­¬ng D­¬ng	Chu Tiªn trÊn	6
+17	 Ph­îng T­êng	Giang T©n Th«n	6
+18	 Thµnh §«	VÜnh L¹c trÊn	6
+19	 Ph­îng T­êng	Giang T©n Th«n	7
+20	 Thµnh §«	VÜnh L¹c trÊn	7
+21	 D­¬ng Ch©u	 BiÖn Kinh	7
+22	§¹o H­¬ng th«n	Chu Tiªn trÊn	7
+23	 D­¬ng Ch©u	 BiÖn Kinh	8
+24	§¹o H­¬ng th«n	Chu Tiªn trÊn	8
+25	 Ph­îng T­êng	 T­¬ng D­¬ng	8
+26	 Ph­îng T­êng	 T­¬ng D­¬ng	9

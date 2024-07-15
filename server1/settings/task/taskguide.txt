@@ -1,0 +1,18 @@
+ID	TaskName	IsQuitable	TaskGuideScriptFile	ShowFullInfoFunc	TaskTraceScriptFile	ShowReducedInfoFunc	ClickTraceItemFunc	TraceTaskFunc
+1	Long Ngò luyÖn thøc	0	\UI\taskui_master.lua	showpasstaskdesc_tutor
+2	Bİ mËt TÇm Long héi	0	\UI\taskui_master.lua	showpasstaskdesc_zheng
+3	C©u chuyÖn L©m Uyªn Nhai	0	\UI\taskui_master.lua	showpasstaskdesc_zhong
+4	Long khİ chi häa	0	\UI\taskui_master.lua	showpasstaskdesc_xie
+5	NhiÖm vô kü n¨ng cÊp 150	0	\script\ui\task\150skill\150skill_guide.lua	show_150skill_taskinfo	\script\ui\task\150skill\150skill_trace.lua	tb150skillTask:ShowReducedTaskInfo	tb150skillTask:OnReducedInfoClick	tb150skillTask:TraceTask
+6	NhiÖm vô D· TÈu	0	\UI\taskui_random.lua	showrandraskdesc
+7	 ThÕ giíi 	0	\UI\taskui_world.lua	showworldtaskdesc
+8	NhiÖm vô S¸t thñ 	0	\UI\taskui_killer.lua	showkillertaskdesc
+9	Th¸ch thøc thêi gian	0	\UI\taskui_messenger.lua	showmessengerdesc
+10	Vâ l©m liªn ®Êu	0	\UI\taskui_wlls.lua	showbwtaskdesc
+11	NhiÖm vô ngÉu nhiªn	0	\UI\taskui_partner_random.lua	show_partner_randomdesc
+12	Thiªn H¹ §Ö NhÊt Bang	0	\UI\taskui_besttong.lua	showbwtaskbesttong
+13	NhiÖm vô LÖnh bµi nhiÖm vô ®Æc biÖt	0	\UI\taskui_tong_randomlingpai.lua	show_tong_lingpaidesc
+14	T©n thñ nhiÖm vô 	0	\script\task\guide\ui\guide.lua	tbGuideTask:ShowInfo		tbGuideTask:ShowReducedInfo	tbGuideTask:ClickTraceItem	tbGuideTask:ShowTrace
+15	nhiÖm vô ¸p Tiªu	0	\script\ui\task\longmenbiaoju\guid.lua	tbLongMenBiaoJuTask:ShowTaskInfo				
+16	nhiÖm vô m«n ph¸i 	0	\script\ui\task\menpairenwu.lua	menpairenwu				
+17	NhiÖm vô Trïng sinh 7	0	\UI\taskui_translife7.lua	translife7_task_desc				
