@@ -3,7 +3,7 @@
 ## Giới Thiệu
 Đây là bộ source code vận tiêu Long Môn Trấn từ JXLinux 9 được chỉnh sửa để chạy trên phiên bản 8 (hoặc thấp hơn).
 
-Tham khảo và thảo luận các vấn đề liên quan tại đây: [thảo luận](https://github.com/vinh-ttn/vantieu9/issues)
+Các vấn đề liên quan về bộ source đang chỉnh sửa [tại đây](https://github.com/vinh-ttn/vantieu9/issues)
 
 
 ## Thông tin thêm
