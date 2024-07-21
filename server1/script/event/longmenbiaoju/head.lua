@@ -99,6 +99,15 @@ LongMenBiaoJu.tbExtraAward = {szName = "LÔ Bao Tiªu Côc", tbProp={6,1,4534,1,0,0
 LongMenBiaoJu.nExtraAwardCondition = 3
 LongMenBiaoJu.nExpBiaocheOtherFactor = 1.1
 
+
+function LongMenBiaoJu:KhoaTHP(szName, flag)
+	local nOwnerIndex = SearchPlayer(szName)
+	if nOwnerIndex > 0 then
+		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, flag)
+		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, flag)
+	end
+end
+
 function LongMenBiaoJu:NewPlayer(szName)
 	local tbNew = self.PlayerClass:New()
 	self.PlayerList[szName] = tbNew
@@ -106,6 +115,7 @@ function LongMenBiaoJu:NewPlayer(szName)
 end
 
 function LongMenBiaoJu:DelPlayer(szName)
+	self:KhoaTHP(szName, 0)
 	self.PlayerList[szName] = nil
 end
 
@@ -133,11 +143,7 @@ function LongMenBiaoJu:NewDropBox(nType, nMapIndex, nX32, nY32, szOwner)
 end
 
 function LongMenBiaoJu:RemoveBiaoChe(npc)
-	local nOwnerIndex = SearchPlayer(npc.szOwner)
-	if nOwnerIndex > 0 then
-		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 0)
-		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 0)
-	end
+	self:KhoaTHP(npc.szOwner, 0)
 	self.BiaoCheIndexList[npc.nNpcIndex] = nil
 	self.BiaoCheList[npc.szOwner] = nil
 end

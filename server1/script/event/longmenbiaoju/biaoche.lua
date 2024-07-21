@@ -101,11 +101,7 @@ end
 
 function BiaoCheClass:OnOwnerEnter()
 	self.bNotifyOwner = nil
-	local nOwnerIndex = SearchPlayer(self.szOwner)
-	if nOwnerIndex > 0 then
-		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 1)
-		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 1)
-	end
+	LongMenBiaoJu:KhoaTHP(self.szOwner, 1)
 end
 
 function BiaoCheClass:OnOwnerLeave()
@@ -115,13 +111,7 @@ function BiaoCheClass:OnOwnerLeave()
 	self.nPlayerLeaveTime = nCurTime
 	self:SyncDataToRelay()
 	self:NotifyOwner()
-
-	local nOwnerIndex = SearchPlayer(self.szOwner)
-	if nOwnerIndex > 0 then
-		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 0)
-		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 0)
-	end
-
+	LongMenBiaoJu:KhoaTHP(self.szOwner, 0)
 end
 
 function BiaoCheClass:IsPlayerNear(nPlayerIndex)

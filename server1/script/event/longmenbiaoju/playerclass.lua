@@ -23,9 +23,6 @@ function Player:OnLeaveMap()
 		return
 	end
 	
-	DisabledUseTownP(0)
-	DisabledUseHeart(0)
-	
 	local nX1, nY1, nMapIndex1 = GetNpcPos(biaoche.nNpcIndex)
 	local nX2, nY2, nMapIndex2 = GetPos()
 	if nMapIndex1 ~= nMapIndex2 then
