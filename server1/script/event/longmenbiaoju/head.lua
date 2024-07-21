@@ -1,4 +1,3 @@
-Include("\\script\\patch9.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
 Include("\\script\\dailogsys\\dailogsay.lua")
