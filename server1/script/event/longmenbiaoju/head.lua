@@ -133,6 +133,11 @@ function LongMenBiaoJu:NewDropBox(nType, nMapIndex, nX32, nY32, szOwner)
 end
 
 function LongMenBiaoJu:RemoveBiaoChe(npc)
+	local nOwnerIndex = SearchPlayer(npc.szOwner)
+	if nOwnerIndex > 0 then
+		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 0)
+		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 0)
+	end
 	self.BiaoCheIndexList[npc.nNpcIndex] = nil
 	self.BiaoCheList[npc.szOwner] = nil
 end
