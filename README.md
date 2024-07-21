@@ -1,7 +1,5 @@
 # Vận tiêu Long Môn Trấn 9
-
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXckEUgEKZQW4azCcoUWjA-gNnnCehJDzpkT8ACRFFdQVgzwQqAFUISyMuRTlY6Nl3f7bAkH5mDeH3FM0_Ep0GazVM8YUpc4wCtHbaMzSWNvyQN5_TXac7Ot7gEmA4NpLRJPnCF8qfOcxc0RXOfEfli8b90K?key=69JrhYHE20yyd5Bd1uKvkw)
-
+ 
 ## Giới Thiệu
 Đây là bộ source code vận tiêu Long Môn Trấn từ JXLinux 9 được chỉnh sửa để chạy trên phiên bản 8 (hoặc thấp hơn).
 
@@ -27,3 +25,8 @@ Nội dung [bài viết gốc](https://www.facebook.com/groups/volamquan/posts/1
 > 
 > Link gốc chưa chỉnh sửa gì:
 > [https://drive.google.com/.../14ESqmk0bbbDia4Dt2iJ.../view...](https://drive.google.com/file/d/14ESqmk0bbbDia4Dt2iJvd0xQL3s9uMag/view?usp=sharing&fbclid=IwZXh0bgNhZW0CMTAAAR1ChT0TsPIF8NzfubOiJxJs_neZNTCoC0OA-_h7Y3JjI7XuQjsscHrbFfQ_aem_ie5cceuFfKWWDzlyIoV0wA)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdy49bB43m45QRv01xvtQf-wXIkzH_KEBz4n8PkfGq2n78-354wc5-9oP4_K_0wttuFPfeYIyQKNdenfuDGI8ev9thfjen1fXLGyAYitRw414LNsujWI3XHJS7BomZwmkbOAYM-iMsNSxRBGrkpmSJNLjS1?key=69JrhYHE20yyd5Bd1uKvkw)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdNQjves8csWFXWOf10pgOH1I1jAM29g2RjqgJzbzhW8kiZ0pXsKTLK05HncR5A_4ZY6vrVoXDoI4NasJta93DSmUqBSOXke_FtnWk-KacuZIkbBc6s4jOJCeOKE28ZljICHLLFxl6WJkbGmvfPh4wmA6vF?key=69JrhYHE20yyd5Bd1uKvkw)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXf1O0ivUQ8OkdJpAk9VgLAxVnmzuhuj_yvPVmRK026KuF2gqTFH6RrsQBnfhTv0fZ1X5qnDHoMG3waI9Af7oVG2NdrMSOCOOuA94dEUgksN-3U5_rHZ0umNo_P75cLgD8db3jG8Vcrbp6OIM45bBulrB14j?key=69JrhYHE20yyd5Bd1uKvkw)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdsMuRsX3eo0HzEZVQ8nG23opawX5eS4lu29W4j2HatXAHPnZSFx0NCakzg9TMMLn_npl_53nl3b3PbsNYg9P1j4jnS4JOBnVkVVc6nmS0iLz7KwZGYS51MG7plWqTzlmiKXxS1zb9SCpgiZ0B4SuTvp6W8?key=69JrhYHE20yyd5Bd1uKvkw)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcoPMJ1qMdQrMNKkDXaS80kiOmyO8BBNPW6CQaO4HgItnekzXJXE-Y2HHKV0E8ZaAhPKqL4oPtgfXSCf-JCaAQa3pMQD4Q-uAaCfq_gVC4iH6cfuPsLGi1ftkKspbN6hYyW1RH9G1I_b5LLbG_Wg04eAa4u?key=69JrhYHE20yyd5Bd1uKvkw)
