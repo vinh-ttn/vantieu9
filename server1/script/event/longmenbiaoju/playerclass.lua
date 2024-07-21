@@ -11,6 +11,7 @@ function Player:New()
 end
 
 function Player:OnLeaveMap()
+
 	local data = LongMenBiaoJu:GetDataClass()
 	data:SetTransferFlag(0)
 	--if self.nGameLoop ~= GetLoop() then --²Ètrapµã¿çµØÍ¼
@@ -21,6 +22,9 @@ function Player:OnLeaveMap()
 	if not biaoche then
 		return
 	end
+	
+	DisabledUseTownP(0)
+	DisabledUseHeart(0)
 	
 	local nX1, nY1, nMapIndex1 = GetNpcPos(biaoche.nNpcIndex)
 	local nX2, nY2, nMapIndex2 = GetPos()
