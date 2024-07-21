@@ -83,11 +83,11 @@ function TaskClass:OnPlayerChangeMapByTrap()
 	tbParam.szOwner = GetName()
 	
 	local npc = LongMenBiaoJu:FindBiaoChe(tbParam.szOwner)
-	if npc then
-		NpcNewWorld(npc.nNpcIndex, tbParam.nMapId, tbParam.nX, tbParam.nY)
-		self:OnBiaoCheChangeMap(npc)
-		return
-	end
+	--if npc then
+	--	NpcNewWorld(npc.nNpcIndex, tbParam.nMapId, tbParam.nX, tbParam.nY)
+	--	self:OnBiaoCheChangeMap(npc)
+	--	return
+	--end
 	
 	LongMenBiaoJu:RemoteCall("DeleteBiaoCheForTransfer", {tbParam.szOwner},
 		self.CreateBiaoCheForTransfer,

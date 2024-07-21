@@ -84,7 +84,7 @@ function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 	
 	self.nState = CallPlayerFunction(nOwnerIndex, GetFightState)
 	
-	if CallPlayerFunction(nOwnerIndex, IsDeath) == 0 and CallPlayerFunction(nOwnerIndex, IsHide) == 0 then
+	if IsPlayerDeath(nOwnerIndex) == 0 and IsPlayerHidden(nOwnerIndex) == 0 then
 		NpcWalk(self.nNpcIndex, nX, nY)
 		if self.bOwnerHideOrDeath == 1 then
 			self.bOwnerHideOrDeath = nil
@@ -101,6 +101,11 @@ end
 
 function BiaoCheClass:OnOwnerEnter()
 	self.bNotifyOwner = nil
+	local nOwnerIndex = SearchPlayer(self.szOwner)
+	if nOwnerIndex > 0 then
+		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 1)
+		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 1)
+	end
 end
 
 function BiaoCheClass:OnOwnerLeave()
@@ -110,6 +115,13 @@ function BiaoCheClass:OnOwnerLeave()
 	self.nPlayerLeaveTime = nCurTime
 	self:SyncDataToRelay()
 	self:NotifyOwner()
+
+	local nOwnerIndex = SearchPlayer(self.szOwner)
+	if nOwnerIndex > 0 then
+		CallPlayerFunction(nOwnerIndex, DisabledUseTownP, 0)
+		CallPlayerFunction(nOwnerIndex, DisabledUseHeart, 0)
+	end
+
 end
 
 function BiaoCheClass:IsPlayerNear(nPlayerIndex)
@@ -123,7 +135,7 @@ end
 
 function BiaoCheClass:TransferToPlayer(nPlayerIndex)
 	local nPlayerMapId, nPlayerX32, nPlayerY32 = CallPlayerFunction(nPlayerIndex, GetWorldPos)
-	NpcNewWorld(self.nNpcIndex, nPlayerMapId, nPlayerX32, nPlayerY32)
+	NpcNewWorld(self, nPlayerMapId, nPlayerX32, nPlayerY32)
 end
 
 function BiaoCheClass:NotifyOwner()

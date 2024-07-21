@@ -13,9 +13,9 @@ end
 function Player:OnLeaveMap()
 	local data = LongMenBiaoJu:GetDataClass()
 	data:SetTransferFlag(0)
-	if self.nGameLoop ~= GetLoop() then --踩trap点跨地图
-		return
-	end
+	--if self.nGameLoop ~= GetLoop() then --踩trap点跨地图
+	--	return
+	--end
 
 	local biaoche = LongMenBiaoJu:FindBiaoChe(GetName())
 	if not biaoche then
