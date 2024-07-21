@@ -9,6 +9,8 @@ Dùng 7z để giải nén
 
 Các vấn đề liên quan về bộ source đang chỉnh sửa [tại đây](https://github.com/vinh-ttn/vantieu9/issues)
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXckEUgEKZQW4azCcoUWjA-gNnnCehJDzpkT8ACRFFdQVgzwQqAFUISyMuRTlY6Nl3f7bAkH5mDeH3FM0_Ep0GazVM8YUpc4wCtHbaMzSWNvyQN5_TXac7Ot7gEmA4NpLRJPnCF8qfOcxc0RXOfEfli8b90K?key=69JrhYHE20yyd5Bd1uKvkw)
+
 
 ## Thông tin thêm
 Nội dung [bài viết gốc](https://www.facebook.com/groups/volamquan/posts/1403274900381698):
