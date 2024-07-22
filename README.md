@@ -11,6 +11,15 @@ Phiên bản hiện tại: **1.1**
 
 Nếu có thắc mắc, ý kiến đóng góp, báo lỗi hay các vấn đề liên quan về bộ source có thể xem [tại đây](https://github.com/vinh-ttn/vantieu9/issues)
 
+## Thay đổi 
+
+|                          | Ngày       | Thay đổi                                                                                                       |
+| ------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------|
+| **1.0**                  | 14/07/2024 | Phiên bản gốc chưa chỉnh sửa gì                                                                                |
+| **1.1**                  | 21/07/2024 | Sửa lỗi tiêu không thể đi qua các thành. Thêm chức năng khóa THP TDP TTTAP khi đang vận tiêu như yêu cầu event |
+
+
+
 ## Thông tin thêm
 Nội dung [bài viết gốc](https://www.facebook.com/groups/volamquan/posts/1403274900381698):
 
