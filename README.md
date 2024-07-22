@@ -1,15 +1,15 @@
 # Vận tiêu Long Môn Trấn 9
  
 ## Giới Thiệu
-Đây là bộ source code vận tiêu Long Môn Trấn từ JXLinux 9 được chỉnh sửa để chạy trên phiên bản 8 (hoặc thấp hơn).
+Đây là bộ source code vận tiêu Long Môn Trấn từ JXLinux 9
 
-Link download phiên bản mới nhất đã được chỉnh sửa để chạy trên bản 8 (có thể bao gồm cả bản 6): [main.tar.gz](https://github.com/vinh-ttn/vantieu9/archive/refs/heads/main.tar.gz) 
+Link download phiên bản mới nhất: [main.tar.gz](https://github.com/vinh-ttn/vantieu9/archive/refs/heads/main.tar.gz) 
 
-Dùng 7z để giải nén
+(đã được chỉnh sửa để chạy trên bản 8, có thể bao gồm cả bản 6 - dùng 7z để giải nén)
+
+Phiên bản hiện tại: **1.1**
 
 Nếu có thắc mắc, ý kiến đóng góp, báo lỗi hay các vấn đề liên quan về bộ source có thể xem [tại đây](https://github.com/vinh-ttn/vantieu9/issues)
-
-
 
 ## Thông tin thêm
 Nội dung [bài viết gốc](https://www.facebook.com/groups/volamquan/posts/1403274900381698):
