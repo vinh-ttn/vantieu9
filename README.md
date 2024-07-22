@@ -16,7 +16,7 @@ Nếu có thắc mắc, ý kiến đóng góp, báo lỗi hay các vấn đề l
 |                          | Ngày       | Thay đổi                                                                                                       |
 | ------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------|
 | **1.0**                  | 14/07/2024 | Phiên bản gốc chưa chỉnh sửa gì                                                                                |
-| **1.1**                  | 21/07/2024 | Sửa lỗi tiêu không thể đi qua các thành. Thêm chức năng khóa THP TDP TTTAP khi đang vận tiêu như yêu cầu event |
+| **1.1**                  | 21/07/2024 | Sửa lỗi tiêu không thể đi qua các thành. Thêm chức năng khóa THP TDP TTTAP khi đang vận tiêu như yêu cầu event.|
 
 
 
