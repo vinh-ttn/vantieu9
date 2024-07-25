@@ -33,9 +33,11 @@ function BiaoCheClass:CreateNpc(nType, nMapId, nX, nY, szOwner)
 		return
 	end
 
+	self.series == self.series or random(0,4) 
+
 	local NpcInfo = self.tbNpcType[self.tbNpcLevel[nType]]
 	local szNpcName = format(LongMenBiaoJu.LANG.BIAOCHE_NAME, nType, szOwner)
-	local nNpcIndex = AddNpcEx(NpcInfo.nId, NpcInfo.nLevel, random(0,4), nMapIndex, nX *32, nY * 32, 1, szNpcName, 1)
+	local nNpcIndex = AddNpcEx(NpcInfo.nId, NpcInfo.nLevel, self.series, nMapIndex, nX *32, nY * 32, 1, szNpcName, 1)
 	if not(nNpcIndex > 0) then
 		return
 	end
@@ -75,6 +77,29 @@ function BiaoCheClass:OwnerFarAway()
 	end
 end
 
+function BiaoCheClass:SetNpcFightState(canFight)
+	if canFight == 1 then
+
+		local kind = GetNpcKind(self.nNpcIndex)
+		if kind ~= 0 then
+
+			local currMaxHp = NPCINFO_GetNpcCurrentMaxLife(self.nNpcIndex)
+			local currHp = NPCINFO_GetNpcCurrentLife(self.nNpcIndex) 
+			local nX, nY, nMapId = GetNpcPos(self.nNpcIndex)
+			nX = nX/32
+			nY = nY/32
+
+			self:DelNpc()
+			self:CreateNpc(self.nType, self.nMapId, nX, nY, self.szOwner)
+			NPCINFO_SetNpcCurrentMaxLife(self.nNpcIndex, currMaxHp)
+			NPCINFO_SetNpcCurrentLife(self.nNpcIndex, currHp) 
+		end
+	else
+		SetNpcKind(id, 0)
+	end
+	return id
+
+end
 function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 	if not self.bOwnerHere then
 		self.bOwnerHideOrDeath = 1
@@ -88,12 +113,12 @@ function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 		NpcWalk(self.nNpcIndex, nX, nY)
 		if self.bOwnerHideOrDeath == 1 then
 			self.bOwnerHideOrDeath = nil
-			SetNpcFightState(self.nNpcIndex, 0)
+			BiaoCheClass:SetNpcFightState(0)
 		end
 	else
 		if self.bOwnerHideOrDeath == nil then
 			self.bOwnerHideOrDeath = 1
-			SetNpcFightState(self.nNpcIndex, 1)
+			BiaoCheClass:SetNpcFightState(1)
 			StopNpcAction(self.nNpcIndex)
 		end
 	end

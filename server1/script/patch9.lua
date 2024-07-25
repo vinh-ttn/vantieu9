@@ -11,11 +11,11 @@ function GetNpcCurLife(id)
 end
 
 function SetNpcFightState(id, canFight)
-	if canFight == 1 then
-		SetNpcKind(id, 0)
-	else
-		SetNpcKind(id, 4)
-	end
+	--if canFight == 1 then
+	--	SetNpcKind(id, 0)
+	--else
+	--	SetNpcKind(id, 4)
+	--end
 
 end
 
