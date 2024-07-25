@@ -33,7 +33,7 @@ function BiaoCheClass:CreateNpc(nType, nMapId, nX, nY, szOwner)
 		return
 	end
 
-	self.series == self.series or random(0,4) 
+	self.series = self.series or random(0,4) 
 
 	local NpcInfo = self.tbNpcType[self.tbNpcLevel[nType]]
 	local szNpcName = format(LongMenBiaoJu.LANG.BIAOCHE_NAME, nType, szOwner)
