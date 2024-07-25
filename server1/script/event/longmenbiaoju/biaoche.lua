@@ -78,6 +78,8 @@ function BiaoCheClass:OwnerFarAway()
 end
 
 function BiaoCheClass:SetNpcFightState(canFight)
+end
+function BiaoCheClass:SetNpcFightStateNotWorking(canFight)
 	if canFight == 1 then
 
 		local kind = GetNpcKind(self.nNpcIndex)
