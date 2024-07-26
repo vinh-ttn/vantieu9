@@ -78,30 +78,19 @@ function BiaoCheClass:OwnerFarAway()
 end
 
 function BiaoCheClass:SetNpcFightState(canFight)
-end
-function BiaoCheClass:SetNpcFightStateNotWorking(canFight)
+	local id = self.nNpcIndex
+
 	if canFight == 1 then
-
-		local kind = GetNpcKind(self.nNpcIndex)
-		if kind ~= 0 then
-
-			local currMaxHp = NPCINFO_GetNpcCurrentMaxLife(self.nNpcIndex)
-			local currHp = NPCINFO_GetNpcCurrentLife(self.nNpcIndex) 
-			local nX, nY, nMapId = GetNpcPos(self.nNpcIndex)
-			nX = nX/32
-			nY = nY/32
-
-			self:DelNpc()
-			self:CreateNpc(self.nType, self.nMapId, nX, nY, self.szOwner)
-			NPCINFO_SetNpcCurrentMaxLife(self.nNpcIndex, currMaxHp)
-			NPCINFO_SetNpcCurrentLife(self.nNpcIndex, currHp) 
-		end
+		SetNpcCurCamp(id, 5)
 	else
-		SetNpcKind(id, 0)
+		local nOwnerIndex = SearchPlayer(self.szOwner)
+		if nOwnerIndex > 0 then
+			local ownerCamp = CallPlayerFunction(nOwnerIndex, GetCurCamp)
+			SetNpcCurCamp(id, owerCamp)
+		end
 	end
-	return id
-
-end
+	return 1
+end 
 function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 	if not self.bOwnerHere then
 		self.bOwnerHideOrDeath = 1
@@ -115,12 +104,12 @@ function BiaoCheClass:OwnerNear(nOwnerIndex, nX, nY)
 		NpcWalk(self.nNpcIndex, nX, nY)
 		if self.bOwnerHideOrDeath == 1 then
 			self.bOwnerHideOrDeath = nil
-			BiaoCheClass:SetNpcFightState(0)
+			self:SetNpcFightState(0)
 		end
 	else
 		if self.bOwnerHideOrDeath == nil then
 			self.bOwnerHideOrDeath = 1
-			BiaoCheClass:SetNpcFightState(1)
+			self:SetNpcFightState(1)
 			StopNpcAction(self.nNpcIndex)
 		end
 	end
@@ -132,7 +121,7 @@ function BiaoCheClass:OnOwnerEnter()
 end
 
 function BiaoCheClass:OnOwnerLeave()
-	SetNpcFightState(self.nNpcIndex, 1)
+	self:SetNpcFightState(1)
 	local nCurTime = GetCurServerTime()
 	StopNpcAction(self.nNpcIndex)
 	self.nPlayerLeaveTime = nCurTime
@@ -152,7 +141,7 @@ end
 
 function BiaoCheClass:TransferToPlayer(nPlayerIndex)
 	local nPlayerMapId, nPlayerX32, nPlayerY32 = CallPlayerFunction(nPlayerIndex, GetWorldPos)
-	NpcNewWorld(self, nPlayerMapId, nPlayerX32, nPlayerY32)
+	--NpcNewWorld(self, nPlayerMapId, nPlayerX32, nPlayerY32)
 end
 
 function BiaoCheClass:NotifyOwner()
