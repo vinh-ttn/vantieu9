@@ -11,6 +11,16 @@ Phiên bản hiện tại: **1.1**
 
 Nếu có thắc mắc, ý kiến đóng góp, báo lỗi hay các vấn đề liên quan về bộ source có thể xem [tại đây](https://github.com/vinh-ttn/vantieu9/issues)
 
+## Cài đặt
+
+Sau khi download file zip về:
+
+- chép đè **gateway** trong zip file lên **gateway** trên server
+- chép đè **server1** lên **server1** trên server
+- khởi động server game lại và vào chơi game.
+
+Hoặc nếu dùng 1ClickVMFull có thể cài đặt nhanh bằng địa chỉ **vinh-ttn/vantieu9**
+
 ## Thay đổi 
 
 |                          | Ngày       | Thay đổi                                                                                                       |
